@@ -8,12 +8,17 @@ pipeline {
         }
         stage('Compile') {
             steps {
-                echo 'Compile the source code' 
+                echo 'Compile the source code change1' 
+            }
+        }
+        stage('Modified') {
+            steps {
+                echo 'modified changes ' 
             }
         }
         stage('Security Check') {
             steps {
-                echo 'Run the security check against the application' 
+                echo 'Run the security check against the application change2' 
             }
         }
         stage('Run Unit Tests') {
